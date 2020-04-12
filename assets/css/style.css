@@ -1,0 +1,338 @@
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+/* ==================================
+font-family: 'Lato', sans-serif;
+====================================
+*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Lato', sans-serif;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    width:1140px;
+    margin:0 auto;
+}
+.row{
+    width:100%;
+    float:left;
+}
+.col-md-12{
+    width:100%;
+    float:left;
+}
+.col-md-4{
+    width:33.33%;
+    float:left;
+}
+/* header Start */
+header{
+    background:#f6f9f9;
+    width:100%;
+    float:left;
+}
+
+.logo{
+    width:100%;
+    float:left;
+    padding:20px 0;
+}
+/* header End */
+
+/* banner Start */
+
+#banner{
+    width:100%;
+    float:left;
+    background:url('../image/banner.jpg') center center no-repeat;
+    background-size:cover;
+    height:100vh;
+    position: relative;
+}
+#banner::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width:100%;
+    background: rgba(0,0,0,0.4);
+}
+.banner-item{
+    position:absolute;
+    content: '';
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color:#fff;
+}
+.banner-item h2{
+    font-size: 65px;
+    line-height: 60px;
+}
+.banner-item .banner-divider{
+    height: 2px;
+    width:100%;
+    background:#15a3f9;
+    margin:20px 0;
+}
+.banner-item p{
+    font-size: 20px;
+}
+.banner-item .btn{
+    margin-top:60px;
+    display: inline-block;
+    background:transparent;
+    border:1px solid #15a3f9;
+    color:#fff;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: .4s all ease-in-out;
+}
+.banner-item .btn:hover{
+    background: #15a3f9;
+    color:#fff;
+}
+
+.banner-item .down-arrow a i{
+    font-size: 30px;
+    color:#fff;
+    display: inline-block;
+    margin-top: 120px;
+    transition: .4s all ease-in-out;
+}
+.banner-item .down-arrow a i:hover{
+    color:#15a3f9;
+}
+/* banner End */
+
+/* simple & pure design Start */
+#simple_pure{
+    width:100%;
+    float: left;
+    background:#f6f9f9;
+}
+.simple_pure_content{
+    text-align: center;
+    padding: 70px 0;
+}
+.simple_pure_content h2{
+    font-size: 40px;
+    margin-bottom:35px;
+    color:#2d3950;
+    font-weight: 500;
+}
+.simple_pure_content p{
+    color:#999999;
+}
+/* simple & pure design End */
+
+/* feature section Start */
+#feature{
+    background:#fff;
+    width: 100%;
+    float: left;
+    padding: 70px 0;
+    text-align: center;
+}
+#feature .feature-item{
+    padding: 0 40px;
+}
+#feature .feature-item h2{
+    font-size: 21px;
+    margin: 15px 0;
+    color:#2d3950;
+    font-weight: 500;
+}
+#feature .feature-item p{
+    font-size: 15px;
+    color:#999999;
+}
+/* feature section End */
+
+/* portfolio section Start */
+#portfolio{
+    background:#f6f9f9;
+    width:100%;
+    float:left;
+    padding:70px 0;
+}
+#portfolio .title{
+    text-align:center;
+}
+#portfolio .title h2{
+    font-size: 40px;
+    margin-bottom:20px;
+    color:#2d3950;
+    font-weight: 500;
+}
+#portfolio .title p{
+    color:#999999;
+}
+
+.portfolio-gallery{
+    margin-top:40px;
+}
+.portfolio-item{
+    width:100%;
+    float:left;
+    cursor: pointer;
+    position: relative;
+}
+.portfolio-item img{
+    width:100%;
+    float:left;
+    height: 252px;
+    object-fit: cover;
+}
+
+.portfolio-icon{
+    position: absolute;
+    content:'';
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:rgba(21,163,249,0.4);
+    text-align:center;
+    transform: scale(0);
+    transition: .4s all ease-in-out;
+
+}
+.portfolio-icon a i{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    color:#fff;
+    border:2px solid #fff;
+    padding:20px;
+    margin:0 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: .4s all ease-in-out;
+}
+.portfolio-icon a i:hover{
+    background:#fff;
+    color:#15a3f9;
+    border:2px solid #15a3f9;
+    font-size: 20px;
+}
+.portfolio-item:hover .portfolio-icon{
+    transform: scale(1);
+}
+.padding-arround {
+    padding: 10px;
+}
+/* portfolio section End */
+
+/* contact us Start */
+#contact-us{
+    width:100%;
+    float:left;
+    background:url('../image/contact-us-bg.jpg');
+    padding:70px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center;
+    position: relative;
+}
+#contact-us .title h2{
+    font-size: 40px;
+    margin-bottom:20px;
+    color:#fff;
+    font-weight: 500;
+}
+#contact-us .title p{
+    color:#999999;
+}
+.contact-us-form{
+    width:100%;
+    float:left;
+    padding: 0px 200px;
+    margin-top: 30px;
+}
+.contact-us-form .form-style{
+    width: 100%;
+    float:left; 
+    margin-top:20px;
+    padding:20px;
+    background:transparent;
+    color:#999999;
+    font-size: 16px;
+    border:1px solid #999999;
+    border-radius: 5px;
+}
+.contact-us-form input:focus{
+    background:#fff;
+    color:#000;
+}
+.contact-us-form textarea:focus{
+    background:#fff;
+    color:#000;
+}
+
+.form-bottom{
+    width:100%;
+    float:left;
+    margin-top:20px;
+}
+.form-bottom .checkbox-area{
+    float:left;
+    color:#fff;
+}
+.form-bottom .checkbox-area input{
+    background:#999999 !important;
+    border-radius:5px !important;
+    margin-right:10px;
+}
+.contact-us-form button{
+    float: right;
+    background:transparent;
+    border:1px solid #15a3f9;
+    padding:15px 50px;
+    border-radius:2px;
+    color:#fff;
+    cursor: pointer;
+    font-size:16px;
+    transition: .4s all ease-in-out;
+}
+.contact-us-form button:hover{
+    background: #15a3f9;
+}
+/* contact us End */
